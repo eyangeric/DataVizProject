@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>data viz</title>
+
+    <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script> -->
+    <style>
+
+      .axis {
+        font: 10px sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      
+      .axis .domain {
+        fill: none;
+        stroke: #000;
+        stroke-opacity: .3;
+        stroke-width: 5px;
+        stroke-linecap: round;
+      }
+      
+      .plot.axis path {
+        stroke-width: 2px;
+      }
+      
+      .axis .halo {
+        fill: none;
+        stroke: #ddd;
+        stroke-width: 8px;
+        stroke-linecap: round;
+      }
+      
+      .slider .handle {
+        fill: #fff;
+        stroke: #000;
+        stroke-opacity: .5;
+        stroke-width: 1.25px;
+        cursor: crosshair;
+      }
+      
+      .yieldcurve {
+        fill: none;
+        stroke: darkgreen;
+        stroke-width: 1.5px;
+      }
+      
+      </style>
+
+</head>
+
+
+<body>
+
+    <script src="{{ url_for('static', filename='js/treasury_yield.js') }}"></script>
+
+
+    <div id="TYCurve">
+
+    </div>
+
+
+
+    <!-- <script type="text/javascript" src="logic.js"></script> -->
+
+</body>
+
+<body>
+    <script src="{{ url_for('static', filename='js/Nov_Jan_Cloud.js') }}"></script>
+    <div id="Nov_Jan_wordChart"></div>
+
+</body>
+
+<body>
+  <script src="{{ url_for('static', filename='js/Jan_Mar_Cloud.js') }}"></script>
+  <div id="Jan_Mar_wordChart"></div>
+
+</body>
+
+
+<!-- <body>
+    <script src="{{ url_for('static', filename='js/SAP500.js') }}"></script>
+    <div id="sap500Chart1"></div>
+
+</body> -->
+
+<!-- <body>
+  <div id="sap500Chart2"></div>
+</body>
+
+<body>
+  <div id="sap500Chart3"></div>
+</body>
+
+<body>
+  <div id="sap500Chart4"></div>
+</body> -->
+
+</html>
